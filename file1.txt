@@ -1,0 +1,12 @@
+#!bin/bash
+#checking whether variable is empty or not
+
+name="nizam"
+#condition --> using operator -n if string is not empty ,it will retruns true
+if [ -n $name ]
+then
+    echo "True"
+else
+    echo "False"
+fi
+
