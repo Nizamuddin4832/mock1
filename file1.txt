@@ -1,0 +1,18 @@
+#!bin/bash
+# sum of numbers from user input range
+echo " enter 1 range of  number : "
+read num
+echo : "enter 2 range of number : "
+read num2
+# we are taking a variable and assigning the value 0
+sum=0
+# condition --> if user number not equal to 0-zero then it will execute , else it will not execute
+if [ $num -ne 0 ]
+then 
+    for (( i=$num; i<=$num2; i++ ))
+    do 
+       sum=$((sum+i))
+    done
+fi
+
+echo " this is the sum of numbers from user input range $num to $num2  = $sum "
