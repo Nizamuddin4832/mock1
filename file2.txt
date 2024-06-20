@@ -1,0 +1,19 @@
+#!/bin/bash
+# Check whether user input number is divisible by 3 and 7 or not
+echo "Enter a number:"
+read num
+
+# We are using nested if
+# If the user entered 0, it will not execute; otherwise, it will execute
+if [ $num -ne 0 ]
+then
+    if [ $((num % 3 == 0 && num % 7 == 0)) ]
+    then
+        echo " It is divisible by 3 and 7. "
+    else
+        echo " It is not divisible by 3 and 7. "
+    fi
+else
+    echo " Please enter a number above 0. "
+fi
+i
